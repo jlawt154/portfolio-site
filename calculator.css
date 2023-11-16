@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+div.calc-container {
+  background: linear-gradient(to bottom right, gray, green, gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#calculator {
+  background-color: darkgreen;
+  height: 60vh;
+  width: 40%;
+  border-radius: 10%;
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+  padding: 2%;
+  box-sizing: border-box;
+}
+input#display {
+  height: 15%;
+  width: 80%;
+  text-align: right;
+  padding-right: 2%;
+  font-family: 'Kanit', sans-serif;
+  font-size: calc(3vw + 3vh);
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg,gray,white,gray);
+}
+.button-area {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+#buttons1 {
+  width: 70%;
+  gap: 2%;
+}
+#buttons2 {
+  width: 20%;
+  margin-top:1rem;
+}
+.number-button {
+  height: 3.5rem;
+  margin-top:1rem;
+  flex: 0 0 30%;
+  background: linear-gradient(darkgreen, green, gray);
+  color:yellow;
+  font-family: 'Edu TAS Beginner', cursive;
+}
+.input-button {
+  cursor: pointer;
+  font-size: calc(2vw + 1vh);
+  overflow: hidden;
+}
+.operator {
+  height: 15%;
+  flex: 0 0 80%;
+  background: linear-gradient(green, lightgreen, green);
+  font-family: 'Kanit', sans-serif;
+}
+#equal {
+  background: linear-gradient(gray,white,gray);
+}
+#clear {
+  background: linear-gradient(red,red,darkred);
+}

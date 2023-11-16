@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+        body {
+            background-image: none;
+            background:linear-gradient(90deg,gray,black,gray)
+        }
+        div.site-container {
+            background-color:rgba(83, 83, 83, 0.5);
+            border:white dotted 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Jake Lawton</h1>
+        <a href="index.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="">Contact</a>
+    </nav>
+    <h1>Projects</h1>
+        <div class="project-wrapper">
+            <div class="header">
+            <h2>Calculator</h2>
+        </div>
+        <div class="content">
+            <div class="project-desc">Calculator</div>
+            <div class="project-info">
+                <div class="info">Date Finished: 11/2/2023</div>
+                <div class="info">Goal: Using string logic, solve simple mathematical equations</div>
+                <div class="info"></div>
+            </div>
+        </div>
+    </div>
+    <div id="calc-container">
+        <div id="calculator">
+        <input type="text" id="display" maxLength="10" disabled>
+        <div class="button-area" id="buttons1">
+        </div>
+        <div class="button-area" id="buttons2">
+          <button class="operator input-button" id="clear" type="button">C</button>
+          <button class="operator input-button" data-value="+" id="add" type="button">+</button>
+          <button class="operator input-button" data-value="-" id="subtract" type="button">-</button>
+          <button class="operator input-button" data-value="*" id="multiply" type="button">*</button>
+          <button class="operator input-button" data-value="/" id="divide" type="button">/</button>
+          <button class="operator input-button" id="equal" type="button">=</button>
+        </div>
+      </div>
+    </div>
+    <div>Some div</div>
+    <script>
+        console.log("internal");
+    </script>
+    <script src="myscript.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>
