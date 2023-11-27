@@ -7,7 +7,7 @@ div.calc-container {
   align-items: center;
 }
 div#calculator {
-  background-color: darkgreen;
+  background-color: gray;
   height: 60vh;
   width: 40%;
   border-radius: 10%;

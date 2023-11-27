@@ -3,42 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="calculator.css">
+    <title>Projects</title>
     <style>
+        canvas#myCanvas {
+            background:rgba(62, 34, 34, 1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:100%;
+            height:100%;
+        }
         body {
-            background-image: none;
-            background:linear-gradient(90deg,gray,black,gray)
+            background-color: black;
         }
         div.site-container {
-            background-color:rgba(83, 83, 83, 0.5);
+            background:rgba(0, 0, 0, 0);
             border:white dotted 3px;
+            text-align:center;
         }
-    </style>
+        </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <nav>
         <h1>Jake Lawton</h1>
         <a href="index.html">About Me</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html">JS and Games</a>
+        <a href="sites.html">Sites</a>
         <a href="">Contact</a>
     </nav>
+    <h1>Games</h1>
+    <div class="site-container" id="game-container">
+        <canvas id="myCanvas">
+            Your browser does not support JS Canvas
+        </canvas>
+        <button onclick="playGame()">Play</button>
+    </div> 
     <h1>Projects</h1>
+    <div class="site-container">
         <div class="project-wrapper">
             <div class="header">
             <h2>Calculator</h2>
         </div>
         <div class="content">
-            <div class="project-desc">Calculator</div>
-            <div class="project-info">
-                <div class="info">Date Finished: 11/2/2023</div>
-                <div class="info">Goal: Using string logic, solve simple mathematical equations</div>
-                <div class="info"></div>
-            </div>
+            <div class="info">This project is a simple calculator created primarily with JS, </div>
+            <div class="info">Date Finished: 11/2/2023</div>
+            <div class="info">Goal: Using string logic, solve simple mathematical equations</div>
         </div>
     </div>
-    <div id="calc-container">
+    <div id= "calc-container">
         <div id="calculator">
         <input type="text" id="display" maxLength="10" disabled>
         <div class="button-area" id="buttons1">
@@ -53,11 +66,9 @@
         </div>
       </div>
     </div>
-    <div>Some div</div>
-    <script>
-        console.log("internal");
-    </script>
+</div>
     <script src="myscript.js"></script>
+    <script src="soccer.js"></script>
     <script src="calculator.js"></script>
 </body>
 </html>
